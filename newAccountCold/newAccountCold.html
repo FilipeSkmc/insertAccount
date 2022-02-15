@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Nova Conta">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Nome" name="name" onchange={handleInputChange}> </lightning-input>
+            <lightning-input label="Telefone" name="phone" onchange={handleInputChange}> </lightning-input>
+            <lightning-input type="text" label="Email" name="website" onchange={handleInputChange}></lightning-input>
+
+            <lightning-button variant="brand" label="Criar Conta" title="Criar Conta" onclick={handleInsertAccount}
+                class="slds-m-left_x-small"></lightning-button>
+            <p>Id da Conta Gerada: {createdAccountId}</p>
+        </div>
+    </lightning-card>
+</template>
