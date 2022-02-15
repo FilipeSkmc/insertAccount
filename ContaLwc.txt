@@ -1,0 +1,14 @@
+public  class ContaLwc {
+    @AuraEnabled
+    public static Account createAccount(String name, String phone, String website){
+        Account acc = new Account(
+            name = name,
+            phone = phone,
+            website = website,
+            rating = 'Cold',
+            type = 'Prospect'
+        );
+        insert acc;
+        return acc;
+    }
+}
